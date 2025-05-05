@@ -1,0 +1,6 @@
+- "$git log master"    to list commits
+- "$git ls-tree --full-tree -r master"   list tracked files in HEAD
+- "$git reset --hard HEAD~1"   revert commit (and current repo state to before current HEAD commit)
+- "$git commit --amend --no-edit"   change current commit
+- github by default does not allow file size > 50MB
+- xz takes WAY more time and resources than gz with only marginal improvement
