@@ -1,0 +1,10 @@
+<TOO SLOW AND TOO RESOURCE INTENSIVE>
+- do single input (arbitrary, 0, 1, 2024) 
+  <if reasonable time> THEN do it for as many number and for as long as possible (preferably 35 since currently stuck at 40)
+  -> save those permanently somewhere
+  -> when they come up at "pass" and $(maxPass - pass) <= $maxSavedPass(pass):
+        --> add $maxSavedPass(pass) <a.k.a number of stones saved>
+        --> remove "pass" from llist ENTIRELY
+
+<ANOTHER>
+- 

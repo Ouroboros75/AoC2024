@@ -1,0 +1,46 @@
+val
+2 3 1 3 2 4 4 3 4 2 <- input
+spc
+ 3 3 3 1 1 1 1 1 0 <- input
+spcX
+ 2 3 3-1-1-1 0-1 
+-1 0 0
+
+maxID = len(val)-1
+curr = 0
+curID=maxID
+
+//populate free-spaces
+//while(curID>=0)
+//	while(curr<=len(spc))
+
+	while(curID>curr)
+		if spc[curr] > val[curID]:	//there's water to pour into freespace
+	  		spcX[curr].append(val[i])
+			spc[curr] -= val[i]
+			curID--;
+			continue
+		else if spc[curr] < val[curID]:
+			spcX[curr] = -(spc[curr]) //too much water to pour into freespace
+			val[curID] -= (spc[curr])
+			curr++;
+			continue;
+		else:
+			spcX[curr].append(val[i])
+			spc[curr] = 0
+			curID--;
+			curr++;
+
+pos=0
+curID=maxID
+for i=0; i<maxID; i++:
+	while(val[i]):
+		checksum += i*pos
+		pos++
+		val[i]--
+	for(j=0; j<numberOfElem(spcX); j++)
+		while(abs(spcX[i][j])>0):
+			checksum += curID*pos
+			pos++
+		if(spcX[i][j]>0):
+			curID--;
